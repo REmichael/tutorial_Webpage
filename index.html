@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <link rel="stylesheet" ref="text/css" href="index.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contentWrapper">
+        <!--Navigation Menu-->
+        <h1>JavaScript</h1>
+        <nav>
+            <ul id="navLinks">
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#functions" class="navLink"><em>FUNCTIONS</em></a></li>
+                <li><a href="#objects" class="navLink"><em>OBJECTS</em></a></li>
+                <li><a href="#conditionals" class="navLink"><em>CONDITIONALS</em></a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+   
+    <section id="sidebar">
+        <div class="contentWrapper">
+     <!--Sidebar Text-->
+            <div id="sidebarlinks">
+            <h3 class="sidebarTitle">JavaScript Help</h3>
+                <p>Bacon ipsum dolor amet pastrami ground round venison tri-tip alcatra. Tenderloin biltong tail shankle drumstick hamburger boudin t-bone. Tri-tip swine chuck, frankfurter prosciutto jerky pastrami ribeye filet mignon burgdoggen landjaeger. Ball tip doner jowl meatloaf capicola salami, sausage pastrami turkey boudin kielbasa andouille tenderloin turducken rump. Tail pork loin doner pastrami, leberkas kevin beef short ribs ham hock short loin swine. Kevin porchetta swine, frankfurter burgdoggen pancetta biltong. Hamburger beef cupim jowl bacon sirloin meatball t-bone andouille tri-tip leberkas swine.</p>
+                    <ul>
+                        <li><a target="_blank" href="https://developer.mozilla.org/en-US/" class="sidebarLink">Mdn docs</a></li>
+                        <li><a target="blank" href="https://www.w3schools.com/js/default.asp" class="sidebarLink">w3schools</a></li>
+                        <li><a target="_blank" href="https://stackoverflow.com/" class="sidebarLink">stack overflow</a></li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+   
+    <section id="definition">
+        <div class="contentWrapper">
+            <img class="logo" src="./assest/102114_Gaurang_JavaScript-and-the.large.jpg" alt="JavaScript logo">
+            <h3>Ja·va·Script</h3>
+            <h4>/ˈjävəskript,ˈjavə-/</h4>
+            <h5>noun</h5>
+            <p>an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+            <p>The importance of JavaScript as a web technology can be determined from the fact that it is currently used by 94.5% of all websites. As a client-side programming language, JavaScript helps web developers to make web pages dynamic and interactive by implementing custom client-side scripts.</p>
+        </div>    
+    </section>
+    <section id="Main">
+        <!--mainSection-->
+        <!--Content-->
+        <div class="mainBox">
+            <article class="contentBox">
+                <a id="functions"></a>
+                <div class="functionBox">
+                   <h2>Functions</h2>
+                </div>
+                <div class="codeBlock">
+                    <pre><code><var class="functionKey">function</var> <span class="functionName">addNums</span>(numOne, numTwo) {
+                <span class="keyword">return</span> numOne + numTwo;
+            }
+        
+        console.<span class="method">log</span>(addNums(<span class="param">2</span>, <span class="param">2</span>));</code></pre>
+                </div>
+                    <p>Functions are chunks of functionality we declare for later use. Like in this example we have created an <em>addNums()</em> function, to take two numbers and return the sum of those numbers to us. <var>numOne</var>, and <var>numTwo</var> are <dfn>parameters</dfn>, meaning they are variables that will only exist inside the scope of the function, and they will assist us with the logic we need to perform. Since those variables are contained in the functions scope, when the function finishes it's execution, those variables are destroyed.</p>
+            </article>
+            <article class="contentBox">
+                <a id="objects"></a>
+                <div class="functionBox">
+                    <h2>Objects</h2>
+                </div>
+                <div class="codeBlock">
+                    <pre><code><var>let</var> <span class="varName">santa'sList</span> = {
+                        <span class="key">name</span>: <span class="stringValue">'Luka'</span>, 
+                        <span class="key">gender</span>:<span class="stringValue">'male'</span>, 
+                        <span class="key">age</span>: <span class="numValue">4</span>, 
+                        <span class="key">naughty</span>: <span class="boolValue">no</span>, 
+                        <span class="key">nice</span>: <span class="boolValue">yes</span>,
+                    }</code></pre>
+                </div>
+                    <p> In the simplest of terms, an object is a collection of properties. A <dfn>property</dfn> is a key to value relationship. Like name, and the string 'Luka'. The santa's list object has a <em>property</em> with a <em>key</em> of "name", that has the <em>value</em> of "Luka".  of 'Quin'. Objects properties can have a value of any data type, even another object! Objects are very popular in holding together lots of varied, but related data, and they come with many built in methods for working with them. The MDN docs will have more information for you!</p>
+            </article>
+            <article class="contentBox">
+                <a id="conditionals"></a>
+                <div class="functionBox">
+                    <h2>Conditionals</h2>
+                </div>
+                <div class="codeBlock">
+                    <pre><code>        <var>var</var> <span class="varName2">weather</span> = <span class="numValue2">75</span>;
+
+        <span class="keyword">if</span>(<span class="varName2">weather</span> > <span class="numValue2">70</span>){
+        console.<span class="method">log</span>("Wear shorts today. It's going to be Hot!");
+        }</code></pre>
+                </div>
+                <p>Hopefully, you've noticed the difference in an application when you are logged in versus when you are logged out. Most times, these values are based on certain conditions being true or false. Conditional statements, using boolean variables, are all over the place in applications.
+
+                        Conditionals are used to check certain conditions in your application. Conditionals have the power to alter the state of your application based on certain conditions being met or unmet, true or untrue.
+                        
+                        In this module, we'll look at if statements and how they are used with conditionals. We declare a variable and initialize it.
+                        We use the if keyword to check a certain condition. Our condition checks if weather is greater than 70. If the value of weather is greater than, then we'll execute a console statement.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <span>&copy;2019 Circle City Code </span>
+            <ul id="menuFooter">
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li>Website by Michael Reardon</li>
+            </ul>
+
+    </footer>
+    
+</body>
+</html>

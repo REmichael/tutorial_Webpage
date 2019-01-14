@@ -1,0 +1,249 @@
+/*COMMON ELEMENTS*/
+
+body {
+    font-size: 67.5%;
+    font-family: 'Share Tech', sans-serif;
+    background: url(./assest/paper_1332008.jpg) no-repeat fixed top center;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+h1 {
+    color: rgb(30, 12, 136);
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+h2 {
+    color: #745b2f;
+    font-size: 1.7em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #555;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+a, a:visited {
+    color: #C64322;
+}
+a:hover {
+    color: #333;
+}
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 3.0em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+/*HEADER*/
+
+header {
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+    }
+    header h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: #745b2f;
+    font-size: 7.5em;
+    letter-spacing: -0.025em;
+    margin: 0;    
+    text-shadow: 2px 2px 0 #bd8437; 
+}
+    
+/*NAV BAR*/
+
+nav {
+    color: #000;
+    font-size: 2em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0 ;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: #C64322;
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color: #C64322;
+    background-color: rgba(252,251,243,0.75);
+}
+
+/*SIDERBAR*/
+
+section#sidebar {
+    width: 340px;
+    float: right;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    color: #745b2f;
+    border-left:  solid 10px;
+    top: 15px;
+   }
+
+/*SECTION DEFINITION*/
+
+section#definition {
+    background-color: #fff;
+    display: block
+}
+
+h3 {
+    display: block;
+    font-size: 4em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+
+/*MAIN SECTION*/
+
+section #main {
+    background-color: rgba(252,251,243,0.7);
+    margin: 0 0 2.0em;
+    padding: 1.5em  0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px #777;/* offset-x | offset-y | blur-radius | color */
+}
+
+
+.codeBlock {
+    background-color: rgb(5, 5, 53);
+    color: white;
+    min-height: 15vh;
+    max-height: 50vh;
+    width: 50vw;
+    font-size: 140%;
+    margin: auto auto 3vh auto;
+    padding: 5px 0 5px 15px;
+    border-radius: 10px;
+    display: block;
+    font-family: 'Share Tech', sans-serif;
+    left: 70px;
+}
+
+.functionBox {
+    color: aliceblue;
+    background-color: rgb(5, 5, 53);
+    width: 10em;
+    border-radius: 100%;
+    text-align: center;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {background-color: whitesmoke;}
+    to {background-color: gray;}
+
+}
+
+.functionKey {
+    color: rgb(166, 89, 255);
+    font-style: initial
+}
+
+.functionName {
+    color: rgb(102, 155, 255);
+}
+
+.keyword {
+    color: rgb(209, 5, 209);
+}
+
+.method {
+    color: lightskyblue;
+}
+
+.param {
+    color: orange
+}
+
+.param {
+    color: orange
+}
+
+.key {
+    color: rgb(101, 209, 101)
+}
+
+.stringValue {
+    color: rgb(101, 209, 101)
+}
+
+.numValue {
+    color: orange
+}
+
+.boolValue {
+    color: rgb(255, 26, 255)
+}
+
+.numValue2 {
+    color: orange;
+}
+
+/*FOOTER*/
+
+footer {
+    color: antiquewhite;
+    position: relative;
+    background-color: rgb(32, 32, 32, .9);
+    bottom: 0;
+    height: 14vh;
+    width: 100%;
+    padding-left: 1vw;
+    display: block;
+}
