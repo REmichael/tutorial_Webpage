@@ -126,6 +126,7 @@ section#sidebar {
 
 section#definition {
     background-color: #fff;
+    border-left-width: 10em;
     display: block
 }
 
